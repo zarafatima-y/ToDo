@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color:  #980147d3;
+    background-image: linear-gradient(315deg,  #980147d3 0%, #000000d0 95%);
+    padding: 10px;
+}
+
+.platform{
+    width:100%;
+    max-width: 540px;
+    background: #ffff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+
+.platform h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.platform h2 img{
+    width: 90px;
+    margin-left: 10px;
+   
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(246, 246, 223);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #980147;
+    color: black;
+    font-size: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    color:white;
+    background-color:#b90559;
+    transition: 0.5s ease;
+
+}
+
+ul li{
+    list-style:none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-top: 5px;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height:28px;
+    width:28px;
+    border-radius: 50%;
+    background-image: url(ICONS/Unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 6px;
+    left: 10px;
+
+}
+
+ul li.checked{
+    color: rgba(0, 0, 0, 0.434);
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    background-image: url(ICONS/Checked.png);
+
+}
+
+.task-container {
+    display: flex; 
+    align-items: center; 
+  }
+  
+  li {
+    flex: 1; 
+  }
+  
+  span {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 12pt;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50%;
+
+}
+
+  span:hover{
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+.The-end{
+    font-weight: bold;
+    color:#980147;
+    background-color:rgba(0, 0, 0, 0.95);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: auto;
+   
+}
